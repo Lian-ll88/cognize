@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { distillContent, generateEmbedding, analyzeRelationships, getDecisionSupport } from './services/geminiService';
+// 👇 关键修改：引用路径改为了 aiService
+import { distillContent, generateEmbedding, analyzeRelationships, getDecisionSupport } from './services/aiService';
 import { findRelatedRecords } from './services/vectorService';
 import { getRecords, saveRecord } from './services/storageService';
 import { DistillResult, KnowledgeRecord, RelatedItem, RelationType } from './types';
