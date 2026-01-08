@@ -32,7 +32,7 @@ export const distillContent = async (text: string): Promise<DistillResult> => {
     待分析文本: "${text}"
 
     **重要格式要求**：
-    请直接返回标准的 JSON 格式，不要包含 ```json 代码块标记。
+    请直接返回标准的 JSON 格式，不要包含 markdown 代码块标记。
     JSON 结构必须包含以下字段：
     {
       "conclusion": "string",
